@@ -8,3 +8,23 @@ body {
     text-align: center;
     margin-block-start: 3em;
 }
+
+#drawing-arm {
+    animation: arm 3s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes arm{
+    0% {
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform: rotate(14deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
