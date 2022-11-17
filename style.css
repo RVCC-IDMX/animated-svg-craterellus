@@ -10,7 +10,7 @@ body {
 }
 
 #drawing-arm {
-    animation: arm 3s ease infinite;
+    animation: arm 5s ease infinite;
     transform-origin: center;
     transform-box: fill-box;
 }
@@ -20,7 +20,11 @@ body {
         transform: rotate(0deg);
 
     }
-    50% {
+    33% {
+        transform: rotate(14deg);
+
+    }
+    66% {
         transform: rotate(14deg);
 
     }
@@ -82,3 +86,62 @@ body {
         transform: scale(1);
     }
 }
+
+#tablet {
+    animation: tablet 5s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes tablet{
+    0% {
+        transform: rotate(0deg);
+
+    }
+    33% {
+        transform: rotate(16deg);
+
+    }
+    66% {
+        transform: rotate(16deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#legs {
+animation: legs 5s ease infinite;
+transform-origin: top;
+transform-box: fill-box;
+}
+
+@keyframes legs {
+0% {
+    transform: translate(0) scale(1) rotate(0deg);
+}
+50% {
+    transform: translate(-2px, 5px) scale(1) rotate(5deg);
+}
+100% {
+    transform: translate(0) scale(1) rotate(0deg);
+}
+}
+
+#leg-back, #leg-back-shadow, #foot-back {
+    animation: backleg 5s ease infinite;
+    transform-origin: center;
+}
+
+@keyframes backleg {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1, 0.9) rotate(10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+    }
