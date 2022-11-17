@@ -144,4 +144,30 @@ transform-box: fill-box;
     100% {
         transform: scale(1) rotate(0deg);
     }
+}
+
+#pen {
+    animation: pen 5s ease infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes pen{
+    0% {
+        transform: rotate(0deg);
+
     }
+    33% {
+        transform: rotate(0deg);
+    }
+    48% {
+        transform: rotate(6deg);
+    }
+    66% {
+        transform: rotate(0deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
